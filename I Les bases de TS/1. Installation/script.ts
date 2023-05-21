@@ -1,6 +1,6 @@
 let str : string = "Hello World" 
 
-function foo() {
+function foo() { // foo est utiliser si on manque d'imagination
     return "Hello World"
 }
 
