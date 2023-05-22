@@ -1,6 +1,6 @@
 <div align="center"><h1><b>Les fonctions</b></h1></div>
 
-Fonction pour ultiplier les nombres
+Fonction pour multiplier les nombres
 ```ts
 /* si les types number ne sont pas définis c'est une erreur
 on peut aussi mettre un nombre */
