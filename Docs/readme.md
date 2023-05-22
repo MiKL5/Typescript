@@ -48,6 +48,8 @@ ___
 
 [Tuple et Enum](tupleEnum)
 
+[Les nterfaces](interface)
+
 ---
 > ### **Exercices**
 <br>
