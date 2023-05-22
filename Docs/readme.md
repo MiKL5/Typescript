@@ -39,6 +39,8 @@ ___
 
 [Les tableaux et les objets](arrayAndObject)
 
+[Les fonctions](functions)
+
 ---
 ### **Exercices**
 
