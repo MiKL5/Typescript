@@ -48,7 +48,10 @@ ___
 
 [Tuple et Enum](tupleEnum)
 
-[Les nterfaces](interface)
+[Les interfaces](interface)
+
+[Le DOM](dom)
+
 
 ---
 > ### **Exercices**
