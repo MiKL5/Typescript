@@ -58,9 +58,9 @@ le type casting n'est pas utile, car, 'document.querySelectorAll' ne peut par re
 la console montre une node list même si elle est vide
 c'est une node list de <HTMLParagraphElement>, le type casting est inutile, car on accès
 à tout ce qui nous intéresse dans une node list
-- forEach pour faire qqch avec tous les éléments qu'il y a parmis ce qui est retourner
+- forEach pour faire qqch avec tous les éléments qu'il y a parmi ce qui est retourner
 - item (assez peu utiliser)
-- length (assez pue utiliser) permet entre autre de savoir combien de paragraphes sont séléctionnés
+- length (assez pue utiliser) permet entre autres de savoir combien de paragraphes sont sélectionnés
 */
 const paragraphsList = document.querySelectorAll('p') as NodeListOf<HTMLParagraphElement>; // donne accés à forEach, item et length
 // donc trop typé, être trop précis n'est pas utile en plus d'être moins lisible
