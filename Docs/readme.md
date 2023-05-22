@@ -42,8 +42,8 @@ ___
 ---
 ### **Exercices**
 
-[Convertir les degrès Celsius en Fahrenheit _(if/else)_](Exercices/1_convertirEnCelsuis)  
-[Convertir les degrès Celsius en Fahrenheit _(do/while)_](Exercices/1_convertirEnCelsuis-DoWhile)  
+[Convertir les degrès Celsius en Fahrenheit _(if/else)_](../Exercices/1_convertirEnCelsuis)  
+[Convertir les degrès Celsius en Fahrenheit _(do/while)_](../Exercices/1_convertirEnCelsuis-DoWhile)  
 
 
 </div>
