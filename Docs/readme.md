@@ -41,6 +41,8 @@ ___
 
 [Les fonctions](functions)
 
+[Les unions et types personnalisés](unionsEtTypesPerso)
+
 ---
 ### **Exercices**
 
