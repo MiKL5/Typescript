@@ -1,6 +1,0 @@
-{
-    "extends": "./configs/base",
-    "files": [
-        "script.ts"
-    ]
-}
