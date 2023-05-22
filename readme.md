@@ -15,11 +15,10 @@ D'où son nom, restreindre le champ des possibles, donc, des erreurs possibles.
 > ## **Exercices**
 <br>
 
-[Convertir les degrès Celsius en Fahrenheit _(if/else)_](../Exercices/1_convertirEnCelsuis)  
-[Convertir les degrès Celsius en Fahrenheit _(do/while)_](../Exercices/1_convertirEnCelsuis-DoWhile)  
+[Convertir les degrès Celsius en Fahrenheit _(if/else)_](Exercices/1_convertirEnCelsuis)  
+[Convertir les degrès Celsius en Fahrenheit _(do/while)_](Exercices/1_convertirEnCelsuis-DoWhile)  
 <br>
 
 > ## **[Doc](Docs)**
-
 
 </div>
