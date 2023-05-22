@@ -30,14 +30,14 @@ ___
 >>> NOTE BENE  
 Éviter d'ouvrir les fichiers `ts` et `js` en même temps, car il prend en compte que l'on crée deux fois les variables.
 
-[¹] `ctrl`+`ù` pour ouvrir un terminal dans VSCode.
+[¹] `ctrl`+`ù` pour ouvrir un terminal dans VSCode pour Windows.
 ___
 
 <div align="center">
 
 [Les types de base](types)
 
-[Les tableaux et les objets]()
+[Les tableaux et les objets](arrayAndObject)
 
 ---
 ### **Exercices**
