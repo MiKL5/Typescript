@@ -35,16 +35,22 @@ ___
 
 <div align="center">
 
+> ### **Les bases**
+<br>
+
 [Les types de base](types)
 
 [Les tableaux et les objets](arrayAndObject)
 
-[Les fonctions](functions)
+[Les fonctions](function)
 
 [Les unions et types personnalisés](unionsEtTypesPerso)
 
+[Tuple et Enum](tupleEnum)
+
 ---
-### **Exercices**
+> ### **Exercices**
+<br>
 
 [Convertir les degrès Celsius en Fahrenheit _(if/else)_](../Exercices/1_convertirEnCelsuis)  
 [Convertir les degrès Celsius en Fahrenheit _(do/while)_](../Exercices/1_convertirEnCelsuis-DoWhile)  
