@@ -24,6 +24,7 @@ Lors de la compilation, il est possible de choisir la version ECMAScript (ES5, E
 
 Entrer dans un terminal[¹], `tsc` suivi du nom du fichier, comme `tsc script.ts`.  
 Pour compiler, choisir les paramètres de compilation, `tsc --init ` et ça créer un fichier `tsconfig.json`.  
+Pour tout compiler `tsc`  
 Pour regarder en permanence les changements et actualiser le `js` `tsc -w`.  
 
 ___
