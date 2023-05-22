@@ -52,6 +52,7 @@ ___
 
 [Le DOM](dom)
 
+[TSConfig](tsConfig)
 
 ---
 > ### **Exercices**
