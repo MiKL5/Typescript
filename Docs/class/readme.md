@@ -1,6 +1,6 @@
 <div align="center"><h1><b>Les classe de base</b></h1></div>
 
-Une classe sert à créer des objet  
+Une classe sert à créer des objets  
 Introduit en JavaScript depuis 2015, ES6  
 Le but est de créer des objets avec certaines propriétés et toues les méthodes écrites dans les classes sont intégrées directement au prototype de cet objet. 
 ```ts
