@@ -31,7 +31,7 @@ ___
 >>> NOTE BENE  
 Éviter d'ouvrir les fichiers `ts` et `js` en même temps, car il prend en compte que l'on crée deux fois les variables.
 
-[¹] `ctrl`+`ù` pour ouvrir un terminal dans VSCode pour Windows.
+>[¹] `ctrl`+`ù` pour ouvrir un terminal dans VSCode pour Windows.
 ___
 
 <div align="center">
@@ -54,6 +54,12 @@ ___
 [Le DOM](dom)
 
 [TSConfig](tsConfig)
+
+
+> ### **Avancé**
+<br>
+
+[Astuces pour les types personnalisés et les interfaces](tipsTypesInterface)
 
 ---
 > ### **Exercices**
