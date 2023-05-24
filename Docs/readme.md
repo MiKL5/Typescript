@@ -55,6 +55,7 @@ ___
 
 [TSConfig](tsConfig)
 
+<br>
 
 > ### **Avancé**
 <br>
@@ -63,6 +64,9 @@ ___
 
 [Les opérateurs](tipsTypesInterface)
 
+[La `functin overload`](overload)
+
+<br>
 
 ---
 > ### **Exercices**
