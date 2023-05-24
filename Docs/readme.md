@@ -61,6 +61,9 @@ ___
 
 [Astuces pour les types personnalisés et les interfaces](tipsTypesInterface)
 
+[Les opérateurs](tipsTypesInterface)
+
+
 ---
 > ### **Exercices**
 <br>
