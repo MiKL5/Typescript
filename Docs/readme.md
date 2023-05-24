@@ -66,6 +66,8 @@ ___
 
 [La `functin overload`](overload)
 
+[Les `Generics`](generics)
+
 <br>
 
 ---
