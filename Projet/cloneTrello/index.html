@@ -16,75 +16,75 @@
     
     <div class="main-content">
 
-        <div class="main-container" draggable="true">
+        <div class="items-container" draggable="true">
             <div class="top-container">
                 <h2>Current</h2>
                 <button class="delete-container-btn">X</button>
-                <ul></ul>
-                <button class="add-item-btn">Add an item</button>
-                <form autocomplete="on">
-                    <div class="top-form-container">
-                        <label for="item">Add a new item</label>
-                        <button type="button" class="close-form-button">X</button>
-                        <input type="text" id="item">
-                        <span class="validation-msg"></span>
-                        <button type="submit">Submit</button>
-                    </div>
-                </form>
             </div>
+            <ul></ul>
+            <button class="add-item-btn">Add an item</button>
+            <form autocomplete="off">
+                <div class="top-form-container">
+                    <label for="item">Add a new item</label>
+                    <button type="button" class="close-form-btn">X</button>
+                </div>
+                <input type="text" id="item" />
+                <span class="validation-msg"></span>
+                <button type="submit">Submit</button>
+            </form>
         </div>
-
-        <div class="main-container" draggable="true">
+    
+        <div class="items-container" draggable="true">
             <div class="top-container">
                 <h2>To do</h2>
                 <button class="delete-container-btn">X</button>
-                <ul></ul>
-                <button class="add-item-btn">Add an item</button>
-                <form autocomplete="on">
-                    <div class="top-form-container">
-                        <label for="item">Add a new item</label>
-                        <button type="button" class="close-form-button">X</button>
-                        <input type="text" id="item">
-                        <span class="validation-msg"></span>
-                        <button type="submit">Submit</button>
-                    </div>
-                </form>
             </div>
-        </div>
-    </div>
-
-    <div class="main-container" draggable="true">
-        <div class="top-container">
-            <h2>Finished</h2>
-            <button class="delete-container-btn">X</button>
             <ul></ul>
             <button class="add-item-btn">Add an item</button>
-            <form autocomplete="on">
+            <form autocomplete="off">
                 <div class="top-form-container">
                     <label for="item">Add a new item</label>
-                    <button type="button" class="close-form-button">X</button>
-                    <input type="text" id="item">
-                    <span class="validation-msg"></span>
-                    <button type="submit">Submit</button>
+                    <button type="button" class="close-form-btn">X</button>
                 </div>
+                <input type="text" id="item" />
+                <span class="validation-msg"></span>
+                <button type="submit">Submit</button>
             </form>
         </div>
-
+    
+        <div class="items-container" draggable="true">
+            <div class="top-container">
+                <h2>Finished</h2>
+                <button class="delete-container-btn">X</button>
+            </div>
+            <ul></ul>
+            <button class="add-item-btn">Add an item</button>
+            <form autocomplete="off">
+                <div class="top-form-container">
+                    <label for="item">Add a new item</label>
+                    <button type="button" class="close-form-btn">X</button>
+                </div>
+                <input type="text" id="item" />
+                <span class="validation-msg"></span>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    
         <div class="add-new-container">
-            <button class="add-another-container">Add another container</button>
-            <form autocomplete="on">
+            <button class="add-container-btn">Add another container</button>
+            <form autocomplete="off">
                 <div class="top-form-container">
                     <label for="new-container">Add a new container</label>
-                    <button type="button" class="close-form-button">X</button>
-                    <input type="text" id="new-container">
-                    <span class="validation-msg"></span>
-                    <button type="submit">Submit</button>
+                    <button type="button" class="close-form-btn close-add-list">X</button>
                 </div>
+                <input type="text" id="new-container" />
+                <span class="validation-msg"></span>
+                <button type="submit">Submit</button>
             </form>
         </div>
 
     </div>
 
-    <script src="app.js"></script>
+    <script src="scripts/app.ts"></script>
 </body>
 </html>

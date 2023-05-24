@@ -86,6 +86,8 @@ ___
 
 [Installation](installTR)
 
+[Utiliser les props](props)
+
 <br>
 
 ---
