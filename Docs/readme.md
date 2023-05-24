@@ -75,6 +75,9 @@ ___
 
 [Les classes de base](class)
 
+[Les champs et le raccourci](fieldsAndShortcut)
+
+
 ---
 > ### **Exercices**
 <br>
