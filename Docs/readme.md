@@ -77,6 +77,16 @@ ___
 
 [Les champs et le raccourci](fieldsAndShortcut)
 
+[Les interfaces et les classes](interfaceAndClass)
+
+<br>
+
+> ### **TypeScript avec React**
+<br>
+
+[Installation](installTR)
+
+<br>
 
 ---
 > ### **Exercices**
