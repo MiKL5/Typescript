@@ -1,4 +1,4 @@
-<div align="center"><h1><b>Les classe de base</b></h1></div>
+<div align="center"><h1><b>Les champs et le raccourci</b></h1></div>
 
 Si on ne précise rien, c'est par défaut `public` c'est donc accessible et modifiable en dehors de la méthode  
 Alors que `private` est accessible que dans la méthode  
