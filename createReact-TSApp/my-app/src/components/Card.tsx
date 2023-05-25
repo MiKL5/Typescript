@@ -7,6 +7,7 @@ type CardProps = { // type personnalisé
 
 // export default function card(props: CardProps) { // indiquer qu'on reçoit des props et lier avec CardProps
 export default function card({title, content}) { 
+    
     return (
         <div>
             <h1>{title}</h1>

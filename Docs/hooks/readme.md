@@ -1,3 +1,7 @@
+<div align="center"><h1><b>Utiliser une liste, des refs, events, ...</b></h1></div>
+
+_App.tsx_
+```tsx
 import React {useState, useRef, useEffect} from 'react';
 import Card from './components/Card';
 
@@ -45,3 +49,4 @@ function App() {
 }
 
 export default App;
+```
