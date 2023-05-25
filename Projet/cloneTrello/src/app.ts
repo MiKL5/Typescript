@@ -12,10 +12,14 @@ let actualContainer: HTMLDivElement,
     // supprimer un container // usage de current car ça sera ajouter à tous les éléments d'un container
     const currentContainerDeletionBtn = currentContainer.querySelector('.delete-container-btn') as HTMLButtonElement;
     const currentAddItemBtn = currentContainer.querySelector('.add-item-btn') as HTMLButtonElement
+    const currentCloseFormBtn = currentContainer.querySelector('.close-form-btn') as HTMLButtonElement
+    const currentForm = currentContainer.querySelector('form') as HTMLFormElement
 
     deleteBtnListeners(currentContainerDeletionBtn)
     addItemBtnListeners(currentAddItemBtn)
-}// qui déclanche deleteBtnListeners
+    closingFormBtnListeners(currentCloseFormBtn)
+    addDDListeners(currentContainer)
+    } // qui déclanche deleteBtnListeners
 
 itemsContainer.forEach((container: HTMLDivElement) => {
     addContainerListeners(container)
@@ -26,6 +30,12 @@ function deleteBtnListeners(btn: HTMLButtonElement) { // qui ajoute l'eventListe
 }
 function addItemBtnListeners(btn: HTMLButtonElement) {
     btn.addEventListener('click', handleAddItem)
+}
+function closingFormBtnListeners(btn: HTMLButtonElement) {
+    btn.addEventListener('click', () => toggleForm(actualBtn, actualForm, false))
+}
+function addFormSubmitListeners(form: HTMLFormElement) {
+    form.addEventListener('submit', createNewItem)
 }
 
 function handleContainerDeletion(e: MouseEvent){
@@ -38,7 +48,7 @@ function handleContainerDeletion(e: MouseEvent){
 function handleAddItem(e: MouseEvent) {
     const btn = e.target as HTMLButtonElement;
     if(actualContainer) toggleForm(actualBtn, actualForm, false); // si un bouton est ouvert, fermer l'autre
-    setContainerItems(btn); //permet d'utilier les variables dynamiques
+    setContainerItems(btn); // permet d'utilier les variables dynamiques
     toggleForm(actualBtn, actualForm, true)
 }
 
@@ -59,4 +69,35 @@ function setContainerItems(btn: HTMLButtonElement) { // gérer le formulaire
     actualForm = actualContainer.querySelector('form') as HTMLFormElement;   
     actualTextInput = actualContainer.querySelector('input') as HTMLInputElement;   
     actualValidation = actualContainer.querySelector('.validation-msg') as HTMLSpanElement;   
+}
+
+function createNewItem(e: Event) {
+    e.preventDefault()
+    // Validation
+    if(actualTextInput.value.length === 0) {
+        actualValidation.textContent = "Must be at least 1 character long" // si l'input n'a pas au moins un caractère, renvoi un erreur
+        return;
+    } else {
+        actualValidation.textContent = ""
+    }
+    // Création Item
+    const itemContent = actualTextInput.value;
+    const li = `<li class="item" draggable="true">
+    <p>${itemContent}</p>
+    <button>X</button>
+    </li>`
+    actualUL.insertAdjacentHTML('beforeend', li)
+    // fermer
+    const item = actualUL.lastElementChild as HTMLLIElement;
+    const liBtn = item.querySelector('button') as HTMLButtonElement;
+    handleItemDeletion(liBtn);
+    addDDListeners(item)
+    actualTextInput.value = "";
+}
+
+function handleItemDeletion(btn: HTMLButtonElement) {
+    btn.addEventListener('click', () => {
+        const elToRemove = btn.parentElement as HTMLLIElement;
+        elToRemove.remove()
+    })
 }
