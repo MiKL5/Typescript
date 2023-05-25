@@ -88,7 +88,7 @@ ___
 
 [Utiliser les props](props)
 
-[Utiliser une liste, des refs, des events, etc](hokks)
+[Utiliser une liste, des refs, des events, etc](hooks)
 
 <br>
 
