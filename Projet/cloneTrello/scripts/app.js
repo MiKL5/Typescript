@@ -1,5 +1,5 @@
 "use strict";
-const itemsContainer = document.querySelectorAll('items-containers');
+const itemsContainer = document.querySelectorAll('.items-container');
 // manipuler les items à l'intérieur des containers pour faire moins de répétition et de code
 let actualContainer, actualBtn, actualUL, actualForm, actualTextInput, actualValidation;
 function addContainerListeners(currentContainer) {
@@ -11,6 +11,7 @@ function addContainerListeners(currentContainer) {
     deleteBtnListeners(currentContainerDeletionBtn);
     addItemBtnListeners(currentAddItemBtn);
     closingFormBtnListeners(currentCloseFormBtn);
+    addFormSubmitListeners(currentForm);
     addDDListeners(currentContainer);
 } // qui déclanche deleteBtnListeners
 itemsContainer.forEach((container) => {
@@ -27,6 +28,12 @@ function closingFormBtnListeners(btn) {
 }
 function addFormSubmitListeners(form) {
     form.addEventListener('submit', createNewItem);
+}
+function addDDListeners(element) {
+    element.addEventListener('dragstart', handleDragStart);
+    element.addEventListener('dragover', handleDragOver);
+    element.addEventListener('drop', handleDrop);
+    element.addEventListener('dragend', handleDragEnd);
 }
 function handleContainerDeletion(e) {
     const btn = e.target;
@@ -88,6 +95,59 @@ function handleItemDeletion(btn) {
         const elToRemove = btn.parentElement;
         elToRemove.remove();
     });
+}
+// Drag And Drop
+let dragSrcEl;
+function handleDragStart(e) {
+    var _a;
+    e.stopPropagation();
+    if (actualContainer)
+        toggleForm(actualBtn, actualForm, false); // si c'est pas faux ; toggleForm
+    dragSrcEl = this;
+    (_a = e.dataTransfer) === null || _a === void 0 ? void 0 : _a.setData('text/html', this.innerHTML); // prend le code html de ce qui est en train de glisser
+}
+function handleDragOver(e) {
+    e.preventDefault(); // sans cette fonction le drag and drop ne fonctionne pas
+}
+function handleDrop(e) {
+    var _a;
+    e.stopPropagation();
+    const receptionEl = this;
+    if (dragSrcEl.nodeName === "LI" && receptionEl.classList.contains("items-container")) {
+        receptionEl.querySelector('ul').appendChild(dragSrcEl); // doit retourner qqch et pas null grâce à HTMLListElement et on ajoute l'élément qu'on drop à l'intérieur
+        addDDListeners(dragSrcEl); // ajoute les éléments car il disparaissent après un drag and drop
+        handleItemDeletion(dragSrcEl.querySelector("button"));
+    }
+    if (dragSrcEl !== this && this.classList[0] === dragSrcEl.classList[0]) { // prend les données enregistrer //on change les éléments html (+ou -) de place en changeant juste le contenu
+        dragSrcEl.innerHTML = this.innerHTML;
+        this.innerHTML = (_a = e.dataTransfer) === null || _a === void 0 ? void 0 : _a.getData('text/html');
+        if (this.classList.contains("items-container")) { // rajouter les évênements à l'élément swaper (échangé) // si c'est un container
+            addContainerListeners(this);
+            this.querySelectorAll('li').forEach((li) => {
+                handleItemDeletion(li.querySelector('button'));
+                addDDListeners(li);
+            });
+        }
+        else {
+            addDDListeners(this);
+            handleItemDeletion(this.querySelector("button"));
+        }
+    }
+}
+function handleDragEnd(e) {
+    e.stopPropagation();
+    if (this.classList.contains('items-container')) { // l'élément qui s'est fait swap back (échanger en retour)
+        addContainerListeners(this);
+        if (this.querySelectorAll("li")) { // reçoit aussi les évêneemnts
+            this.querySelectorAll('li').forEach((li) => {
+                handleItemDeletion(li.querySelector('button'));
+                addDDListeners(li);
+            });
+        }
+    }
+    else {
+        addDDListeners(this);
+    }
 }
 // Add New Container
 const addContainerBtn = document.querySelector('.add-container-btn');

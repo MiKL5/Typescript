@@ -1,4 +1,4 @@
-const itemsContainer = document.querySelectorAll('items-containers') as NodeListOf<HTMLDivElement>
+const itemsContainer = document.querySelectorAll('.items-container') as NodeListOf<HTMLDivElement>
 
 // manipuler les items à l'intérieur des containers pour faire moins de répétition et de code
 let actualContainer: HTMLDivElement,
@@ -8,7 +8,7 @@ let actualContainer: HTMLDivElement,
     actualTextInput: HTMLInputElement,
     actualValidation: HTMLSpanElement;
 
-    function addContainerListeners(currentContainer: HTMLDivElement) { // sert à ajouter tout les listeners
+function addContainerListeners(currentContainer: HTMLDivElement) { // sert à ajouter tout les listeners
     // supprimer un container // usage de current car ça sera ajouter à tous les éléments d'un container
     const currentContainerDeletionBtn = currentContainer.querySelector('.delete-container-btn') as HTMLButtonElement;
     const currentAddItemBtn = currentContainer.querySelector('.add-item-btn') as HTMLButtonElement
@@ -18,8 +18,9 @@ let actualContainer: HTMLDivElement,
     deleteBtnListeners(currentContainerDeletionBtn)
     addItemBtnListeners(currentAddItemBtn)
     closingFormBtnListeners(currentCloseFormBtn)
+    addFormSubmitListeners(currentForm)
     addDDListeners(currentContainer)
-    } // qui déclanche deleteBtnListeners
+} // qui déclanche deleteBtnListeners
 
 itemsContainer.forEach((container: HTMLDivElement) => {
     addContainerListeners(container)
@@ -36,6 +37,12 @@ function closingFormBtnListeners(btn: HTMLButtonElement) {
 }
 function addFormSubmitListeners(form: HTMLFormElement) {
     form.addEventListener('submit', createNewItem)
+}
+function addDDListeners(element: HTMLElement) { //drag and drop
+    element.addEventListener('dragstart', handleDragStart)
+    element.addEventListener('dragover', handleDragOver)
+    element.addEventListener('drop', handleDrop)
+    element.addEventListener('dragend', handleDragEnd)
 }
 
 function handleContainerDeletion(e: MouseEvent){
@@ -102,6 +109,63 @@ function handleItemDeletion(btn: HTMLButtonElement) {
     })
 }
 
+// Drag And Drop
+
+let dragSrcEl: HTMLElement;
+function handleDragStart(this: HTMLElement, e: DragEvent){ // this toujours en premier car c'est pas un paramètres, c'est ce que je peux utiliser dans la fonction, sinon c'est une erreur
+    e.stopPropagation()
+
+    if(actualContainer) toggleForm(actualBtn, actualForm, false); // si c'est pas faux ; toggleForm
+    dragSrcEl = this;
+    e.dataTransfer?.setData('text/html', this.innerHTML) // prend le code html de ce qui est en train de glisser
+}
+function handleDragOver(e: DragEvent) {
+    e.preventDefault() // sans cette fonction le drag and drop ne fonctionne pas
+}
+function handleDrop(this: HTMLElement, e: DragEvent) {
+    e.stopPropagation()
+    const receptionEl = this;
+
+    if(dragSrcEl.nodeName === "LI" && receptionEl.classList.contains("items-container")) {
+        (receptionEl.querySelector('ul') as HTMLUListElement).appendChild(dragSrcEl); // doit retourner qqch et pas null grâce à HTMLListElement et on ajoute l'élément qu'on drop à l'intérieur
+        addDDListeners(dragSrcEl) // ajoute les éléments car il disparaissent après un drag and drop
+        handleItemDeletion(dragSrcEl.querySelector("button") as HTMLButtonElement)
+    }
+
+    if(dragSrcEl !== this && this.classList[0] === dragSrcEl.classList[0]){// prend les données enregistrer //on change les éléments html (+ou -) de place en changeant juste le contenu
+        dragSrcEl.innerHTML = this.innerHTML;
+        this.innerHTML = e.dataTransfer?.getData('text/html') as string;
+        if(this.classList.contains("items-container")) { // rajouter les évênements à l'élément swaper (échangé) // si c'est un container
+            addContainerListeners(this as HTMLDivElement)
+
+            this.querySelectorAll('li').forEach((li: HTMLLIElement) => {
+                handleItemDeletion(li.querySelector('button') as HTMLButtonElement)
+                addDDListeners(li);
+            })
+        } else {
+            addDDListeners(this)
+            handleItemDeletion(this.querySelector("button") as HTMLButtonElement)
+        }
+    }
+
+}
+
+function handleDragEnd(this: HTMLElement, e: DragEvent){
+    e.stopPropagation()
+    if(this.classList.contains('items-container')) { // l'élément qui s'est fait swap back (échanger en retour)
+        addContainerListeners(this as HTMLDivElement)
+        if(this.querySelectorAll("li")) { // reçoit aussi les évêneemnts
+            this.querySelectorAll('li').forEach((li: HTMLLIElement) => {
+                handleItemDeletion(li.querySelector('button') as HTMLButtonElement)
+                addDDListeners(li);
+            })
+        }
+    } else {
+        addDDListeners(this)
+    }
+}
+
+
 // Add New Container
 
 const addContainerBtn = document.querySelector('.add-container-btn') as HTMLButtonElement;
@@ -131,7 +195,7 @@ function createNewContainer(e: Event) {
 
     const itemsContainer = document.querySelector(".items-container") as HTMLDivElement;
     const newContainer = itemsContainer.cloneNode() as HTMLDivElement;
-
+    
     const newContainerContent = `
     <div class="top-container">
         <h2>${addContainerFormInput.value}</h2>
