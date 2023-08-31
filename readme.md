@@ -12,7 +12,7 @@ TS peut donner des types précis aux variables, paramètres, classes, et cætera
 
 <br>
 
-[Clone de Trello](Projet/cloneTrello "Outil de gestion de projet basé sur les fonctionnalités de Trello")
+[Clone de Trello](Projet/cloneTrello "Outil de gestion de projet basé sur les fonctionnalités de Trello") _wip_
 
 <br>
 
