@@ -37,66 +37,40 @@ ___
 <div align="center">
 
 > ### **Les bases**
-<br>
-
 [Les types de base](types)
-
 [Les tableaux et les objets](arrayAndObject)
-
 [Les fonctions](function)
-
 [Les unions et types personnalisés](unionsEtTypesPerso)
-
 [Tuple et Enum](tupleEnum)
-
 [Les interfaces](interface)
-
 [Le DOM](dom)
-
 [TSConfig](tsConfig)
 
 <br>
 
 > ### **Avancé**
-<br>
-
 [Astuces pour les types personnalisés et les interfaces](tipsTypesInterface)
-
 [Les opérateurs](tipsTypesInterface)
-
 [La `functin overload`](overload)
-
 [Les `Generics`](generics)
 
 <br>
 
 > ### **Orienté objet**
-<br>
-
 [Les classes de base](class)
-
 [Les champs et le raccourci](fieldsAndShortcut)
-
 [Les interfaces et les classes](interfaceAndClass)
 
 <br>
 
 > ### **TypeScript avec React**
-<br>
-
 [Installation](installTR)
-
 [Utiliser les props](props)
-
 [Utiliser une liste, des refs, des events, etc](hooks)
 
 <br>
 
 ---
 > ### **Exercices**
-<br>
-
 [Convertir les degrès Celsius en Fahrenheit _(if/else)_](../Exercices/1_convertirCelsuis)  
 [Convertir les degrès Celsius en Fahrenheit _(do/while)_](../Exercices/1_convertirCelsuis-DoWhile)
-
-</div>
