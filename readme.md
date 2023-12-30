@@ -16,10 +16,6 @@ TS peut donner des types précis aux variables, paramètres, classes, et cætera
 
 <br>
 
-> ## **[Exercices](Docs)**
-
-<br>
-
 > ## **[Doc](Docs)**
 
 </div>
