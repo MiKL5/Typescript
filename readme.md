@@ -12,15 +12,11 @@ TS peut donner des types précis aux variables, paramètres, classes, et cætera
 
 <br>
 
-[Clone de Trello](Projet/cloneTrello "Outil de gestion de projet basé sur les fonctionnalités de Trello") _wip_
+[Clone de Trello](Projet/clone "Outil de gestion de projet basé sur les fonctionnalités de Trello")
 
 <br>
 
-> ## **Exercices**
-<br>
-
-[Convertir les degrès Celsius en Fahrenheit _(if/else)_](Exercices/1_convertirCelsuis)  
-[Convertir les degrès Celsius en Fahrenheit _(do/while)_](Exercices/1_convertirCelsuis-DoWhile)  
+> ## **[Exercices](Docs)**
 
 <br>
 
