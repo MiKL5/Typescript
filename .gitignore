@@ -26,3 +26,216 @@ createReact-TSApp/my-app/src/App.tsx
 createReact-TSApp/my-app/src/index.css
 createReact-TSApp/my-app/src/index.tsx
 createReact-TSApp/my-app/src/components/Card.tsx
+Assets/images/._mixedArray.png
+Assets/images/._Typescript_logo_2020.svg
+Assets/._images
+avancé/1. Type et Interface/._tsconfig.json
+avancé/1. Type et Interface/._script.ts
+avancé/1. Type et Interface/._script.js
+avancé/1. Type et Interface/._index.html
+avancé/2. Opérateurs/._index.html
+avancé/2. Opérateurs/._script.js
+avancé/2. Opérateurs/._script.ts
+avancé/2. Opérateurs/._tsconfig.json
+avancé/3. Overload/._index.html
+avancé/3. Overload/._script.js
+avancé/3. Overload/._script.ts
+avancé/3. Overload/._tsconfig.json
+avancé/4. Generics/._index.html
+avancé/4. Generics/._script.js
+avancé/4. Generics/._script.ts
+avancé/4. Generics/._tsconfig.json
+avancé/._1. Type et Interface
+avancé/._2. Opérateurs
+avancé/._3. Overload
+avancé/._4. Generics
+Projet/clone/._scripts
+Projet/clone/._index.html
+Projet/clone/._package-lock.json
+Projet/clone/._Assets
+Projet/clone/._.idea
+Projet/clone/._src
+Projet/clone/._tsconfig.json
+Projet/clone/.idea/._.gitignore
+Projet/clone/.idea/._cloneTrello.iml
+Projet/clone/.idea/._modules.xml
+Projet/clone/.idea/._vcs.xml
+Projet/clone/Assets/._style.css
+Projet/clone/scripts/._app.js
+Projet/clone/src/._app.ts
+Projet/._clone
+bases/1. Installation/._index.html
+bases/1. Installation/._script.js
+bases/1. Installation/._script.ts
+bases/1. Installation/._tsconfig.json
+bases/2. Les types de base/._index.html
+bases/2. Les types de base/._script.js
+bases/2. Les types de base/._script.ts
+bases/2. Les types de base/._tsconfig.json
+Assets/images/._trelloClone.png
+bases/3. Tableaux Objets/._index.html
+bases/3. Tableaux Objets/._script.js
+bases/3. Tableaux Objets/._script.ts
+bases/3. Tableaux Objets/._tsconfig.json
+bases/4. Fonctions/._index.html
+bases/4. Fonctions/._script.js
+bases/4. Fonctions/._script.ts
+bases/4. Fonctions/._tsconfig.json
+bases/5. Unions et custom types/._index.html
+bases/5. Unions et custom types/._script.js
+bases/5. Unions et custom types/._script.ts
+bases/5. Unions et custom types/._tsconfig.json
+bases/6. Tuple et Enum/._index.html
+bases/6. Tuple et Enum/._script.js
+bases/6. Tuple et Enum/._script.ts
+bases/6. Tuple et Enum/._tsconfig.json
+bases/7. Interfaces/._index.html
+bases/7. Interfaces/._script.js
+bases/7. Interfaces/._script.ts
+bases/7. Interfaces/._tsconfig.json
+bases/8. DOM/._index.html
+bases/8. DOM/._script.js
+bases/8. DOM/._script.ts
+bases/8. DOM/._tsconfig.json
+bases/9. TSConfig/public/._analytics.js
+bases/9. TSConfig/public/._index.html
+bases/9. TSConfig/public/._script.js
+bases/9. TSConfig/src/._analytics.js
+bases/9. TSConfig/src/._analytics.ts
+bases/9. TSConfig/src/._script.js
+bases/9. TSConfig/src/._script.ts
+bases/9. TSConfig/._public
+bases/9. TSConfig/._src
+bases/9. TSConfig/._tsconfig.json
+bases/._1. Installation
+bases/._2. Les types de base
+bases/._3. Tableaux Objets
+bases/._4. Fonctions
+bases/._5. Unions et custom types
+bases/._6. Tuple et Enum
+bases/._7. Interfaces
+bases/._8. DOM
+bases/._9. TSConfig
+classes/1. Classe de base/._index.html
+classes/1. Classe de base/._script.js
+classes/1. Classe de base/._script.ts
+classes/1. Classe de base/._tsconfig.json
+classes/2. Les champs/._index.html
+classes/2. Les champs/._script.js
+classes/2. Les champs/._script.ts
+classes/2. Les champs/._tsconfig.json
+classes/2. Les champs/._index.html
+classes/2. Les champs/._script.js
+classes/2. Les champs/._script.ts
+classes/2. Les champs/._tsconfig.json
+classes/3. Interfaces et Classes/._index.html
+classes/3. Interfaces et Classes/._script.js
+classes/3. Interfaces et Classes/._script.ts
+classes/3. Interfaces et Classes/._tsconfig.json
+classes/3. Interfaces et Classes/._index.html
+classes/3. Interfaces et Classes/._script.js
+classes/3. Interfaces et Classes/._script.ts
+classes/3. Interfaces et Classes/._tsconfig.json
+classes/._1. Classe de base
+classes/._2. Les champs
+classes/._3. Interfaces et Classes
+Docs/arrayAndObject/._readme.md
+Docs/class/._readme.md
+Docs/class/._readme.md
+Docs/dom/._readme.md
+Docs/dom/._readme.md
+Docs/fieldsAndShortcut/._readme.md
+Docs/fieldsAndShortcut/._readme.md
+Docs/function/._readme.md
+Docs/function/._readme.md
+Docs/generics/._readme.md
+Docs/generics/._readme.md
+Docs/hooks/._readme.md
+Docs/hooks/._readme.md
+Docs/installTR/._readme.md
+Docs/installTR/._readme.md
+Docs/interface/._readme.md
+Docs/interface/._readme.md
+Docs/interfaceAndClass/._readme.md
+Docs/interfaceAndClass/._readme.md
+Docs/operators/._readme.md
+Docs/operators/._readme.md
+Docs/overload/._readme.md
+Docs/overload/._readme.md
+Docs/props/._readme.md
+Docs/props/._readme.md
+Docs/tipsTypesInterface/._readme.md
+Docs/tipsTypesInterface/._readme.md
+Docs/tsConfig/._readme.md
+Docs/tsConfig/._readme.md
+Docs/tupleEnum/._readme.md
+Docs/tupleEnum/._readme.md
+Docs/types/._readme.md
+Docs/types/._readme.md
+Docs/unionsEtTypesPerso/._readme.md
+Docs/unionsEtTypesPerso/._readme.md
+Docs/._arrayAndObject
+Docs/._class
+Docs/._dom
+Docs/._fieldsAndShortcut
+Docs/._function
+Docs/._generics
+Docs/._hooks
+Docs/._installTR
+Docs/._interface
+Docs/._interfaceAndClass
+Docs/._operators
+Docs/._overload
+Docs/._props
+Docs/._readme.md
+Docs/._tipsTypesInterface
+Docs/._tsConfig
+Docs/._tupleEnum
+Docs/._types
+Docs/._unionsEtTypesPerso
+Exercices/1_convertirCelsuis/.idea/._.gitignore
+Exercices/1_convertirCelsuis/.idea/._1_convertirEnCelsuis.iml
+Exercices/1_convertirCelsuis/.idea/._modules.xml
+Exercices/1_convertirCelsuis/.idea/._vcs.xml
+Exercices/1_convertirCelsuis/._.idea
+Exercices/1_convertirCelsuis/._index.html
+Exercices/1_convertirCelsuis/._script.js
+Exercices/1_convertirCelsuis/._script.ts
+Exercices/1_convertirCelsuis/._tsconfig.json
+Exercices/1_convertirCelsuis-DoWhile/._.idea
+Exercices/1_convertirCelsuis-DoWhile/._index.html
+Exercices/1_convertirCelsuis-DoWhile/._script.js
+Exercices/1_convertirCelsuis-DoWhile/._script.ts
+Exercices/1_convertirCelsuis-DoWhile/._tsconfig.json
+Exercices/1_convertirCelsuis-DoWhile/.idea/._.gitignore
+Exercices/1_convertirCelsuis-DoWhile/.idea/._1_convertirEnCelsuis-DoWhile.iml
+Exercices/1_convertirCelsuis-DoWhile/.idea/._modules.xml
+Exercices/1_convertirCelsuis-DoWhile/.idea/._vcs.xml
+Exercices/1_convertirCelsuis-DoWhile/.idea/._.gitignore
+Exercices/1_convertirCelsuis-DoWhile/.idea/._1_convertirEnCelsuis-DoWhile.iml
+Exercices/1_convertirCelsuis-DoWhile/.idea/._modules.xml
+Exercices/1_convertirCelsuis-DoWhile/.idea/._vcs.xml
+Exercices/1_convertirCelsuis-DoWhile/.idea/._.gitignore
+Exercices/1_convertirCelsuis-DoWhile/.idea/._1_convertirEnCelsuis-DoWhile.iml
+Exercices/1_convertirCelsuis-DoWhile/.idea/._modules.xml
+Exercices/1_convertirCelsuis-DoWhile/.idea/._vcs.xml
+Exercices/1_convertirCelsuis-DoWhile/._.idea
+Exercices/1_convertirCelsuis-DoWhile/._index.html
+Exercices/1_convertirCelsuis-DoWhile/._script.js
+Exercices/1_convertirCelsuis-DoWhile/._script.ts
+Exercices/1_convertirCelsuis-DoWhile/._tsconfig.json
+Exercices/._1_convertirCelsuis
+Exercices/._1_convertirCelsuis-DoWhile
+Projet/clone/._readme.md
+._.git
+._.gitignore
+._.idea
+._.vscode
+._Assets
+._avancé
+._bases
+._classes
+._Docs
+._Exercices
+._Projet
+._readme.md
