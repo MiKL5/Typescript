@@ -30,47 +30,47 @@ Pour regarder en permanence les changements et actualiser le `js` `tsc -w`.
 ___
 >>> NOTE BENE  
 Éviter d'ouvrir les fichiers `ts` et `js` en même temps, car il prend en compte que l'on crée deux fois les variables.
-
->[¹] `ctrl`+`ù` pour ouvrir un terminal dans VSCode pour Windows.
+>>>
+>>>[¹] `ctrl`+`ù` pour ouvrir un terminal dans VSCode pour Windows.
 ___
 
 <div align="center">
 
 > ### **Les bases**
-[Les types de base](types)
-[Les tableaux et les objets](arrayAndObject)
-[Les fonctions](function)
-[Les unions et types personnalisés](unionsEtTypesPerso)
-[Tuple et Enum](tupleEnum)
-[Les interfaces](interface)
-[Le DOM](dom)
-[TSConfig](tsConfig)
+[Les types de base](types)  
+[Les tableaux et les objets](arrayAndObject)  
+[Les fonctions](function)  
+[Les unions et types personnalisés](unionsEtTypesPerso)  
+[Tuple et Enum](tupleEnum)  
+[Les interfaces](interface)  
+[Le DOM](dom)  
+[TSConfig](tsConfig)  
 
 <br>
 
 > ### **Avancé**
-[Astuces pour les types personnalisés et les interfaces](tipsTypesInterface)
-[Les opérateurs](tipsTypesInterface)
-[La `functin overload`](overload)
-[Les `Generics`](generics)
+[Astuces pour les types personnalisés et les interfaces](tipsTypesInterface)  
+[Les opérateurs](tipsTypesInterface)  
+[La `functin overload`](overload)  
+[Les `Generics`](generics)  
 
 <br>
 
 > ### **Orienté objet**
-[Les classes de base](class)
-[Les champs et le raccourci](fieldsAndShortcut)
-[Les interfaces et les classes](interfaceAndClass)
+[Les classes de base](class)  
+[Les champs et le raccourci](fieldsAndShortcut)  
+[Les interfaces et les classes](interfaceAndClass)  
 
 <br>
 
 > ### **TypeScript avec React**
-[Installation](installTR)
-[Utiliser les props](props)
-[Utiliser une liste, des refs, des events, etc](hooks)
+[Installation](installTR)  
+[Utiliser les props](props)  
+[Utiliser une liste, des refs, des events, etc](hooks)  
 
 <br>
 
 ---
 > ### **Exercices**
 [Convertir les degrès Celsius en Fahrenheit _(if/else)_](../Exercices/1_convertirCelsuis)  
-[Convertir les degrès Celsius en Fahrenheit _(do/while)_](../Exercices/1_convertirCelsuis-DoWhile)
+[Convertir les degrès Celsius en Fahrenheit _(do/while)_](../Exercices/1_convertirCelsuis-DoWhile)  
