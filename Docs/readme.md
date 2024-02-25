@@ -1,4 +1,4 @@
-# **Typescript** <img align="right" src="../Assets/images/Typescript_logo_2020.svg" alt="TypeScript" title="TypeScript" widht="auto" height="64px">
+# **Typescript** <a href="../"><img align="right" src="../Assets/images/Typescript_logo_2020.svg" alt="TypeScript" height="64px"></a>
 
 ## **C'est quoi Typescript ?**
 
@@ -31,7 +31,7 @@ ___
 >>> NOTE BENE  
 Éviter d'ouvrir les fichiers `ts` et `js` en même temps, car il prend en compte que l'on crée deux fois les variables.
 >>>
->>>[¹] `ctrl`+`ù` pour ouvrir un terminal dans VSCode pour Windows.
+>>>[¹] <kbd>ctrl</kbd>+<kbd>ù</kbd> pour ouvrir un terminal dans VSCode pour Windows.
 ___
 
 <div align="center">
